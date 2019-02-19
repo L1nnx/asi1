@@ -9,7 +9,25 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <title>Andromeda CUP</title>
-  </head>
+  
+    <style>
+    .map-container-2{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-2 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+    </style>
+
+
+</head>
   <body>
     <div class="pos-f-t">
         <nav class="navbar navbar-dark bg-dark">
@@ -40,31 +58,18 @@
                 <li class="nav-item">
                   <a class="nav-link" href="murder.html">Murder Inc</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="ubicacion.html">Ubicación Torneo</a>
-                </li>
               </ul>
             </div>
           </nav>
         </div>
         
-        <div style="background-color: #3d3c42" class="h-100">
-
-        <div class="text-center">
-          <img src="andromeda.png" class="w-100" alt="Andromeda">
-        </div>
-
-        <div class="text-center">
-          <h1 class="p-4 text-white"> Overwatch Andromeda CUP</h1>
-        </div>
-   
-        <div class="text-left">
-          <h4 class="text-white">
-            Vuelve la esperadisima Andromeda, esta vez con la ayuda de <small class="text-muted">OGseries</small> y <small class="text-muted">OMEN HP</small>
-          </h4>
-        </div>
-      
-      </div>
+    <!--Google map-->
+<div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
+    <iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+      style="border:0" allowfullscreen></iframe>
+  </div>
+  
+  <!--Google Maps-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
